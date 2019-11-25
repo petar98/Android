@@ -48,7 +48,6 @@
         android:layout_marginStart="8dp"
         android:ems="10"
         android:hint="@string/editText_second"
-        android:autofillHints="@string/editText_second"
         android:inputType="textLongMessage"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button_second"
