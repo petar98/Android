@@ -4,8 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
-import android.widget.TextView
-import android.widget.Toast
 import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
@@ -16,9 +14,6 @@ class MainActivity : AppCompatActivity() {
 
         val rollButton: Button = findViewById(R.id.roll_button)
         rollButton.setOnClickListener { rollDice() }
-
-//        val countUpButton: Button = findViewById(R.id.count_up_button)
-//        countUpButton.setOnClickListener { countUp() }
 
         val resetButton: Button = findViewById(R.id.reset_button)
         resetButton.setOnClickListener { reset() }
@@ -39,21 +34,6 @@ class MainActivity : AppCompatActivity() {
 
         diceImage.setImageResource(drawableResource)
     }
-
-//    private fun countUp() {
-//        val resultText: TextView = findViewById(R.id.result_text)
-//        var countedUp = 1
-//        if (resultText.text != "Hello World!") {
-//            if (resultText.text.toString().toInt() != 6) {
-//                 countedUp = resultText.text.toString().toInt() + 1
-//            }
-//            else {
-//                 countedUp = resultText.text.toString().toInt()
-//             }
-//        }
-//
-//        resultText.text = countedUp.toString()
-//    }
 
     private fun reset() {
         val diceImage: ImageView = findViewById(R.id.dice_image)
