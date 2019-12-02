@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ImplicitIntents</string>
+    <string name="uri_default">http://developer.android.com</string>
+    <string name="button_uri">Open Website</string>
+    <string name="location_default">Golden Gate Bridge</string>
+    <string name="button_location">Open location</string>
+    <string name="share_default">Quick Brown Fox jumps ...</string>
+    <string name="button_share">Share This Text</string>
+    <string name="share_chooser_title">Share this text with:</string>
+    <string name="picture_button">Take a picture</string>
+</resources>
