@@ -2,6 +2,7 @@ package com.example.toastapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -11,17 +12,13 @@ public class MainActivity extends AppCompatActivity {
 
     private int countPresses = 0;
     private TextView showCounts;
+    public static final String COUNT_MESSAGE = "com.example.android.toastapp.extra.MESSAGE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         showCounts = (TextView) findViewById(R.id.showCountTxt);
-    }
-
-    public void showToast(View view) {
-        Toast toast = Toast.makeText(this, R.string.text_label_message, Toast.LENGTH_SHORT);
-        toast.show();
     }
 
     public void countDown(View view) {
@@ -44,5 +41,12 @@ public class MainActivity extends AppCompatActivity {
         if (showCounts != null) {
             showCounts.setText(Integer.toString(countPresses));
         }
+    }
+
+    public void startHelloActivity(View view) {
+        Intent intent = new Intent(this, HelloActivity.class);
+        String count = showCounts.getText().toString();
+        intent.putExtra(COUNT_MESSAGE, count);
+        startActivity(intent);
     }
 }

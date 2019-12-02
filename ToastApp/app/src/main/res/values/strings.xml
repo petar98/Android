@@ -6,4 +6,7 @@
     <string name="text_label_message">Hello Toast!</string>
     <string name="count_up_label">Count Up</string>
     <string name="show_count_less_than_zero">Press counts resset</string>
+    <string name="say_hello_txt">Say Hello!</string>
+    <string name="title_activity_hello">HelloActivity</string>
+    <string name="hello_txt">Hello!</string>
 </resources>
