@@ -22,10 +22,70 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Log.d(LOG_TAG, "-------------");
+        Log.d(LOG_TAG, "onCreate");
 
         mMessageEditText = findViewById(R.id.editText_main);
         replyHeaderTextView = findViewById(R.id.text_header_reply);
         replyMessageTextView = findViewById(R.id.text_message_reply);
+
+        if (savedInstanceState != null) {
+            // The app is started with saved instance state -> Restore it
+            boolean isVisible = savedInstanceState.getBoolean("reply_visible");
+            if (isVisible) {
+                replyHeaderTextView.setVisibility(View.VISIBLE);
+                replyMessageTextView.setText(savedInstanceState.getString("reply_text"));
+                replyMessageTextView.setVisibility(View.VISIBLE);
+            }
+        }
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        // If header is visible then state of the reply needs to be saved
+        // Otherwise it will use the default layout after start
+        if (replyHeaderTextView.getVisibility() == View.VISIBLE) {
+            outState.putBoolean("reply_visible", true);
+            outState.putString("reply_text", replyMessageTextView.getText().toString());
+        }
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d(LOG_TAG, "onStart");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d(LOG_TAG, "onResume");
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.d(LOG_TAG, "onRestart");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d(LOG_TAG, "onDestroy");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d(LOG_TAG, "onStop");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d(LOG_TAG, "onPause");
     }
 
     public void launchSecondActivity(View view) {
