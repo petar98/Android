@@ -21,6 +21,10 @@
     <string name="next_day_delivery">Next day ground delivery</string>
     <string name="same_day_delivery">Same day messenger service</string>
     <string name="pick_up_delivery">Pick up</string>
+    <string name="contact_menu_label">Contact</string>
+    <string name="order_menu_label">Order</string>
+    <string name="status_menu_label">Status</string>
+    <string name="favorites_menu_label">Favorites</string>
 
     <string-array name="labels_array">
         <item>Home</item>
@@ -28,4 +32,9 @@
         <item>Mobile</item>
         <item>Other</item>
     </string-array>
+
+    <string name="action_order_message">You selected Order.</string>
+    <string name="action_status_message">You selected Status.</string>
+    <string name="action_favorites_message">You selected Favorites.</string>
+    <string name="action_contact_message">You selected Contact.</string>
 </resources>

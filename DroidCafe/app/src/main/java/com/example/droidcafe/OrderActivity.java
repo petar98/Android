@@ -20,10 +20,15 @@ public class OrderActivity extends AppCompatActivity implements
         setContentView(R.layout.activity_order);
 
         Intent intent = getIntent();
-        String message = "Order: " + intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
 
-        TextView textView = findViewById(R.id.order_textview);
-        textView.setText(message);
+        String orderMessage = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+
+        if (orderMessage != null) {
+            String message = "Order: " + orderMessage;
+
+            TextView textView = findViewById(R.id.order_textview);
+            textView.setText(message);
+        }
 
         Spinner spinner = findViewById(R.id.label_spinner);
         if (spinner != null) {
