@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DatePicker</string>
+    <string name="date_prompt">Choose a date:</string>
+    <string name="date_text">Date</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="time_prompt">Choose a time:</string>
+    <string name="time_button">Time</string>
+</resources>
