@@ -1,6 +1,7 @@
 package com.example.droidcafe;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.DialogFragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -83,6 +84,20 @@ public class OrderActivity extends AppCompatActivity implements
 
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
+        // nothing to do here
+    }
 
+    public void showDatePicker(View view) {
+        DialogFragment dialogFragment = new DatePickerFragment();
+        dialogFragment.show(getSupportFragmentManager(), "datePicker");
+    }
+
+    public void processDatePickerResults(int year, int month, int day) {
+        String fullDate = (Integer.toString(day) + "/" +
+                Integer.toString(month + 1) + "/" +
+                Integer.toString(year));
+
+        TextView dateText = findViewById(R.id.date_text);
+        dateText.setText(fullDate);
     }
 }
