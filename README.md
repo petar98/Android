@@ -17,3 +17,24 @@ Training projects from the android java and kotlin courses:
     5. 	Replace calls to findViewById() with references to the view in the binding object. For example:
         findViewById<Button>(R.id.done_button) ⇒ binding.doneButton
     (In the example, the name of the view is generated camel case from the view's id in the XML.)
+
+Steps for binding views to data:
+
+    Create a data class for your data.
+    Add a <data> block inside the <layout> tag.
+    Define a <variable> with a name, and a type that is the data class.
+
+<data>
+   <variable
+       name="myName"
+       type="com.example.android.aboutme.MyName" />
+</data>
+
+    In MainActivity, create a variable with an instance of the data class. For example:
+    private val myName: MyName = MyName("Aleks Haecky")
+
+    In the binding object, set the variable to the variable you just created:
+    binding.myName = myName
+
+    In the XML, set the content of the view to the variable that you defined in the <data> block. Use dot notation to access the data inside the data class.
+    android:text="@={myName.name}"
