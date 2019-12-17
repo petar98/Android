@@ -6,6 +6,7 @@ Training projects from the android java and kotlin courses:
   Kotlin -> https://developer.android.com/courses/kotlin-android-fundamentals/to
 
   Steps to use data binding to replace calls to findViewById():
+  
     1.  Enable data binding in the android section of the build.gradle file:
     	  dataBinding { enabled = true }
     2.  Use <layout> as the root view in your XML layout.
