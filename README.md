@@ -38,3 +38,8 @@ Steps for binding views to data:
 
     In the XML, set the content of the view to the variable that you defined in the <data> block. Use dot notation to access the data inside the data class.
     android:text="@={myName.name}"
+
+
+Navigation and Implicit intents: 
+    This application contains examples of navigation graph fragments and implicit intents for sharing:
+        https://github.com/google-developer-training/android-kotlin-fundamentals-apps/tree/master/AndroidTrivia
