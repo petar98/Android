@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AudioManagementTest</string>
+    <string name="android_audio_recording">Android Audio Recording</string>
+    <string name="mode_btn_text">Mode</string>
+    <string name="ring_btn_text">Ring</string>
+    <string name="vibrate_btn_string">Vibrate</string>
+    <string name="silent_btn_text">Silent</string>
+</resources>
