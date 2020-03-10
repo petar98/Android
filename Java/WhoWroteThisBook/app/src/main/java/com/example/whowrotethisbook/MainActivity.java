@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
                     InputMethodManager.HIDE_NOT_ALWAYS);
         }
 
+        // handle the case with no internet connection
         ConnectivityManager connectivityManager = (ConnectivityManager)
                 getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = null;
