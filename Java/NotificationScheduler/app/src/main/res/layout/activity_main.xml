@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/global_padding"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/network_type_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/network_type"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:layout_margin="@dimen/network_type_margin" />
+
+    <RadioGroup
+        android:id="@+id/network_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/network_type_margin">
+
+        <RadioButton
+            android:id="@+id/no_network"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_network"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/any_network"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/any_network" />
+
+        <RadioButton
+            android:id="@+id/wifi_network"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wifi_network" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/schedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/schedule_job"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/network_type_margin"
+        android:onClick="scheduleJob" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel_jobs"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/network_type_margin"
+        android:onClick="cancelJobs" />
+
+</LinearLayout>
