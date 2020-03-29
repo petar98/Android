@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MessengerService</string>
+    <string name="start_activity">Start Activity</string>
+    <string name="say_hello">Say Hello!</string>
+</resources>
