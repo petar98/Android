@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SleepTracker.iml" filepath="$PROJECT_DIR$/SleepTracker.iml" group="SleepTracker" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="SleepTracker/app" />
+      <module fileurl="file://$PROJECT_DIR$/SleepTrackerGridView.iml" filepath="$PROJECT_DIR$/SleepTrackerGridView.iml" group="SleepTrackerGridView" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="SleepTrackerGridView/app" />
     </modules>
   </component>
 </project>
