@@ -12,28 +12,6 @@
 6. User has the ability to delete all persistent notes using the floating button with a recycle bin on it in the left of the home screen. Note that this button is hidden until the user has at least one note listed in `RecyclerView`. After the user taps this button, all notes are deleted and the screen shows no listed notes as well as the text "There aren't any notes yet.".
 7. User also has the ability to delete a single note on his/her choice. That is achieved by swiping gesture on the note, which has to be deleted left or right. After that a `Snackbar` is showed on the bottom of the screen for a short period of time, saying that the note has been deleted.
 
-##### `Noter` UI elements (screens and pop ups):
-
-<img src="/home/petar/Pictures/Screenshot_20200415_144528_com.example.wordssample.jpg" style="zoom:25%;" />
-
-[^This is the home screen of Noter if there are no notes saved by the user or it has been started for the first time]: 
-
-<img src="/home/petar/Pictures/Screenshot_20200415_144534_com.example.wordssample.jpg" style="zoom:25%;" />
-
-[^Second screen for entering note text and saving the note on the database]: 
-
-<img src="/home/petar/Pictures/Screenshot_20200415_144645_com.example.wordssample.jpg" style="zoom:25%;" />
-
-[^A Snackbar showing that an empty note cannot be saved]: 
-
-<img src="/home/petar/Pictures/Screenshot_20200415_144628_com.example.wordssample.jpg" style="zoom:25%;" />
-
-[^Home screen with user notes listed in a RecyclerView]: 
-
-<img src="/home/petar/Pictures/Screenshot_20200415_144636_com.example.wordssample.jpg" style="zoom:25%;" />
-
-[^Snackbar showing that a note has been deleted]: 
-
 ##### `Noter` architecture:
 
 All of the application components are created along with the advices of Android Architecture Components patterns. It includes 
@@ -43,7 +21,3 @@ All of the application components are created along with the advices of Android 
 - `LiveData` object, used to notify views for data changes
 - `Room` database. `Room` is a SQLite object mapping  library, used for providing compile time checks of SQLite statements and returning `LiveData` observables.
 - `Repository` object, used for single source of truth for all app data. In other words - clean API for communication between UI and database.
-
-The diagram bellow shows the basic concept of Android Architecture Components:
-
-![](/home/petar/Pictures/Screenshot from 2020-04-15 15-14-12.png)
