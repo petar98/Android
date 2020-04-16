@@ -117,11 +117,13 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-//    public void deleteWord(View view) {
-//        TextView textView = (TextView) view;
-//        Word word = new Word(textView.getText().toString());
-//        mViewModel.delete(word);
-//        Snackbar.make(findViewById(R.id.fab), "You deleted note " +
-//                textView.getText().toString(), Snackbar.LENGTH_SHORT).show();
-//    }
+    public void editNote(View view) {
+        TextView tv = (TextView) view;
+        String noteText = tv.getText().toString();
+
+        String KEY_NOTE = "key_note";
+        Intent intent = new Intent(MainActivity.this, EditNoteActivity.class);
+        intent.putExtra(KEY_NOTE, noteText);
+        startActivity(intent);
+    }
 }

@@ -9,11 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_notes"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.noter.NewWordActivity"></activity>
         <activity
-            android:name="com.example.noter.MainActivity"
-            android:label="@string/action_bar_heading"
-            >
+            android:name=".EditNoteActivity"
+            android:label="@string/title_activity_edit_note"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".NewWordActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/action_bar_heading">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

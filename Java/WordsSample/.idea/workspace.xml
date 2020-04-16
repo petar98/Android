@@ -17,7 +17,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="HYF0218C10000486" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_5X_API_28" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -48,7 +48,7 @@
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="HYF0218C10000486" />
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-04-13T14:17:32.949Z" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../android-room-with-a-view" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Noter/Noter" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RecentsManager">
