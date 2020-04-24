@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtCountryTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:text="Country:"/>
+
+            <TextView
+                android:id="@+id/txtCountryName"
+                android:layout_toRightOf="@+id/txtCountryTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="19sp"
+                android:layout_marginLeft="10sp"
+                android:textColor="#000"
+                android:text="Country:"/>
+
+            <TextView
+                android:id="@+id/txtNewConfirmedTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txtCountryName"
+                android:textColor="#000"
+                android:text="New Confirmed:"/>
+
+            <TextView
+                android:id="@+id/txtNewConfirmed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="19sp"
+                android:layout_toRightOf="@+id/txtNewConfirmedTitle"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txtCountryName"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000"
+                android:text="32435465475"/>
+
+            <TextView
+                android:id="@+id/txtConfirmTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txtNewConfirmedTitle"
+                android:textColor="#000"
+                android:text="Total Confirmed:"/>
+
+            <TextView
+                android:id="@+id/txtConfirmCases"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="19sp"
+                android:layout_toRightOf="@+id/txtConfirmTitle"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txtNewConfirmedTitle"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000"
+                android:text="32435465475"/>
+
+            <TextView
+                android:id="@+id/txtNewDeathsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txtConfirmTitle"
+                android:textColor="#000"
+                android:text="New Deaths:"/>
+
+            <TextView
+                android:id="@+id/txtNewDeaths"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="19sp"
+                android:layout_toRightOf="@+id/txtNewDeathsTitle"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txtConfirmTitle"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000"
+                android:text="32435465475"/>
+
+
+            <TextView
+                android:id="@+id/txtTotalDeathsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txtNewDeaths"
+                android:textColor="#000"
+                android:text="Total Deaths:"/>
+
+            <TextView
+                android:id="@+id/txtTotalDeaths"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="19sp"
+                android:layout_toRightOf="@+id/txtTotalDeathsTitle"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txtNewDeaths"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000"
+                android:text="32435465475"/>
+
+            <TextView
+                android:id="@+id/txtNewRecoveredTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txtTotalDeaths"
+                android:textColor="#000"
+                android:text="Total Deaths:"/>
+
+            <TextView
+                android:id="@+id/txtNewRecovered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="19sp"
+                android:layout_toRightOf="@+id/txtNewRecoveredTitle"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txtTotalDeaths"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000"
+                android:text="32435465475"/>
+
+            <TextView
+                android:id="@+id/txtRecoveredTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txtNewRecovered"
+                android:textColor="#000"
+                android:text="Total Recovered:"/>
+
+            <TextView
+                android:id="@+id/txtRecovered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="19sp"
+                android:layout_toRightOf="@+id/txtRecoveredTitle"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txtNewRecovered"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000"
+                android:text="32435465475"/>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

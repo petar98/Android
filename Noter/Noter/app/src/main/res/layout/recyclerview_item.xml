@@ -13,12 +13,4 @@
         android:textColor="@android:color/background_light"
         android:onClick="editNote"/>
 
-<!--    <ImageButton-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_gravity="end"-->
-<!--        android:src="@drawable/ic_delete_black_24dp"-->
-<!--        android:background="@color/cardview_light_background"-->
-<!--        android:onClick="deleteWord"/>-->
-
 </LinearLayout>
