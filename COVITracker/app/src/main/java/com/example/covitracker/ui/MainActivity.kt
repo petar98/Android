@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.ProgressBar
+import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -23,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        recyclerView.setHasFixedSize(true)
+//        recyclerView.setHasFixedSize(true)
         recyclerView.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
         viewModel = ViewModelProvider(this)[ListViewModel::class.java]
         mProgressBar = progressBar
@@ -33,5 +34,7 @@ class MainActivity : AppCompatActivity() {
             progressBar.visibility = View.GONE
         }
         viewModel.callApi().observe(this, data)
+
+//        searchButton.setOnClickListener { View }
     }
 }

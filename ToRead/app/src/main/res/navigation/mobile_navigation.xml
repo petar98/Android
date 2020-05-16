@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.toread.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.toread.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.toread.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_search_isbn"
+        android:name="com.example.toread.ui.search_isbn.SearchIsbnFragment"
+        android:label="@string/search_isbn"
+        tools:layout="@layout/fragment_search_isbn" >
+    </fragment>
+    <fragment
+        android:id="@+id/nav_search_title"
+        android:name="com.example.toread.ui.search_title.SearchTitleFragment"
+        android:label="@string/search_title_label"
+        tools:layout="@layout/fragment_search_title" >
+    </fragment>
+    <fragment
+        android:id="@+id/nav_search_author"
+        android:name="com.example.toread.ui.search_author.SearchAuthorFragment"
+        android:label="@string/search_author_label"
+        tools:layout="@layout/fragment_search_author" >
+    </fragment>
+</navigation>
