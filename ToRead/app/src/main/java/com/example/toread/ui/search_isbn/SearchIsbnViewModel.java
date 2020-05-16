@@ -9,7 +9,7 @@ public class SearchIsbnViewModel extends ViewModel {
 
     public SearchIsbnViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is Search Isbn fragment");
+        mText.setValue("Enter ISBN of the book you are searching");
     }
 
     public LiveData<String> getText() {

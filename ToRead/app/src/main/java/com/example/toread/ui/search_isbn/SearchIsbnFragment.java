@@ -22,7 +22,7 @@ public class SearchIsbnFragment extends Fragment {
         searchIsbnViewModel =
                 ViewModelProviders.of(this).get(SearchIsbnViewModel.class);
         View root = inflater.inflate(R.layout.fragment_search_isbn, container, false);
-        final TextView textView = root.findViewById(R.id.text_slideshow);
+        final TextView textView = root.findViewById(R.id.text_search_isbn);
         searchIsbnViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
