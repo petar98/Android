@@ -10,6 +10,7 @@ import com.google.android.material.snackbar.Snackbar;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import androidx.core.view.MotionEventCompat;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
@@ -18,8 +19,10 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.util.Log;
+import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.FrameLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -108,8 +111,14 @@ public class MainActivity extends AppCompatActivity {
             public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction) {
                 int position = viewHolder.getAdapterPosition();
                 Word word = adapter.getWordAtPosition(position);
-                Snackbar.make(findViewById(R.id.fab), "You deleted note " +
-                        word.getWord(), Snackbar.LENGTH_SHORT).show();
+                Snackbar snack = Snackbar.make(findViewById(android.R.id.content), "You deleted " +
+                        word.getWord(), Snackbar.LENGTH_LONG);
+                View view = snack.getView();
+                view.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.darkBackground));
+                FrameLayout.LayoutParams params =(FrameLayout.LayoutParams)view.getLayoutParams();
+                params.gravity = Gravity.TOP;
+                view.setLayoutParams(params);
+                snack.show();
                 mViewModel.delete(word);
             }
         });
@@ -126,9 +135,13 @@ public class MainActivity extends AppCompatActivity {
             mViewModel.insert(word);
             findViewById(R.id.empty_text).setVisibility(View.INVISIBLE);
         } else {
-            Snackbar.make(findViewById(R.id.fab), R.string.empty_not_saved,
-                    Snackbar.LENGTH_SHORT)
-                    .show();
+            Snackbar snack = Snackbar.make(findViewById(android.R.id.content), R.string.empty_not_saved, Snackbar.LENGTH_LONG);
+            View view = snack.getView();
+            view.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.darkBackground));
+            FrameLayout.LayoutParams params =(FrameLayout.LayoutParams)view.getLayoutParams();
+            params.gravity = Gravity.TOP;
+            view.setLayoutParams(params);
+            snack.show();
         }
     }
 

@@ -6,6 +6,14 @@
     android:layout_height="match_parent"
     android:paddingTop="@dimen/very_big_padding">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/heading_new_word"
+        android:text="@string/add_new_note"
+        android:textSize="@dimen/empty_text_size"
+        android:gravity="center" />
+
     <EditText
         android:id="@+id/edit_word"
         android:layout_width="match_parent"
@@ -28,3 +36,9 @@
         android:textColor="@color/buttonLabel" />
 
 </LinearLayout>
+
+<!--    android:textColor="@color/buttonLabel"-->
+<!--    android:textColorLink="@color/buttonLabel"-->
+<!--    android:textColorHighlight="@color/buttonLabel"-->
+<!--    android:textColorHint="@color/buttonLabel"-->
+<!--    android:shadowColor="@color/buttonLabel"-->

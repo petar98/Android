@@ -22,4 +22,5 @@
     <string name="title_activity_edit_note">EditNoteActivity</string>
     <string name="edit">EDIT</string>
     <string name="edit_note_heading">Edit Note</string>
+    <string name="add_new_note">Add new note</string>
 </resources>
