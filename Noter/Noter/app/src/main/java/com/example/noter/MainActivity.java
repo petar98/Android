@@ -26,6 +26,7 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 
@@ -53,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onChanged(List<Word> words) {
                 Log.i("MainActivity", "ViewModel data changed " + words.size());
+                Collections.reverse(words);
                 wordsCount = words.size();
                 adapter.setWords(words);
                 controlTextShowing(wordsCount);
